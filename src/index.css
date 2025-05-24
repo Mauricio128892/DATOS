@@ -1,0 +1,20 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Añade o modifica estas líneas para el fondo del body */
+body {
+  background-color: #1a202c; /* Usamos un color hexadecimal para un gris muy oscuro, casi negro */
+  /* Puedes probar con bg-gray-800 o bg-gray-900 directamente si prefieres la clase de Tailwind */
+  /* background-color: theme('colors.gray.800'); */ /* Si tu Vite o PostCSS lo permite */
+  min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
